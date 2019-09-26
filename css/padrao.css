@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+.logo {font-size: 50px; font-family: 'Lobster', cursive; color: #DA1984; text-decoration: none}
+.logo:hover{color: #DA1984; text-decoration: none}
+.btn-text-pink {color: #DA1984; font-weight: 700;}
+.btn-text-pink:hover {color: #A50050;}
+.btn-login{background: #DA1984; color: #ffffff; font-weight: 700;}
+.btn-login:hover{background: #A50050; color: #ffffff;}
+.text-pink{color: #A50050}
