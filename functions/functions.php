@@ -5,6 +5,7 @@
  *	inicialização das sessões															   *
  *******************************************************************************************/
 
+
 //--------------------------Iniciando sessão--------------------------------
 	//verificando status da sessão (se ela já foi iniciada e talz)
 	if(session_status() !== PHP_SESSION_ACTIVE){

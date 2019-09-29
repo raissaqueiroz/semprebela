@@ -1,4 +1,23 @@
 <?php
 
-require_once 'functions/functions.php';
-carregaIncludes("functions", array("const", "conexao", "database"));
+/* Constantes de Configuração do Banco */
+	//servidor
+	define('DB_HOSTNAME', 'localhost');
+	//usuário
+	define('DB_USERNAME', 'root');
+	//senha
+	define('DB_PASSWORD', "");
+	//Banco
+	define('DB_NAME', 'SEMPREBELA');
+	//codificação
+	define('DB_CHARSET', 'utf8');
+	//prefixo
+	#define('DB_PREFIX', 'e1');
+
+/* Timezone */
+	date_default_timezone_set("BRAZIL/EAST");
+
+/* Constantes de Configuração do Site */
+	//titulo
+	define('TITLE', 'Sempre Bela');
+?>

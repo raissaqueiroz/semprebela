@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title><?=TITLE?> - Entrar</title>
+        <title><?=TITLE?> - Cadastre-se</title>
         <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
         <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
         <link rel="stylesheet" href="css/style.css">
@@ -25,7 +25,7 @@
                                     <a href="index.php" title="Sempre Bela" class="logo"><?= TITLE ?></a>
                                 </div>
                                 <h4>Seja Bem Vindo(a)!</h4>
-                                <h6 class="font-weight-light">Faça login para acessar o sistema!</h6>
+                                <h6 class="font-weight-light">Preencha os campos abaixo para realizar seu cadastro!</h6>
                                 <?= getFlash('mensagem') ?>
                                 <form class="pt-3" action="login.php" method="POST" autocomplete="off">
                                     <div class="form-group">
@@ -50,15 +50,13 @@
                                             <input type="password" class="form-control form-control-lg border-left-0" id="exampleInputPassword" placeholder="Senha" name="senha" required>                        
                                         </div>
                                     </div>
-                                    <div class="my-2 d-flex justify-content-center align-items-center">
-                                        <a href="#" class="auth-link text-black">Esqueceu a senha?</a>
-                                    </div>
+        
                                     <div class="my-3">
-                                        <button class="btn btn-block btn-login btn-lg font-weight-medium auth-form-btn" type="submit" name="entrar">LOGIN</button>
+                                        <button class="btn btn-block btn-login btn-lg font-weight-medium auth-form-btn" type="submit" name="cadastrar">Cadastrar</button>
                                     </div>
                                 
                                     <div class="text-center mt-4 font-weight-light">
-                                         Não possui conta ainda? <a href="cadastrar.php" class="btn-text-pink">Criar</a>
+                                         Já possui conta ? <a href="index.php" class="btn-text-pink">Entrar</a>
                                     </div>
                                 </form>
                             </div>

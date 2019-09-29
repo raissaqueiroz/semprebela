@@ -115,9 +115,9 @@
 			}
 		dbClose($conn);
 	}
-	function ifExistsUser($usuario){
+	function ifExistsUser($usuario, $table){
 		$conn = dbConnect(); //abrindo conexão
-		$query = "SELECT * FROM usuario WHERE usuario = '{$usuario}'";
+		$query = "SELECT * FROM " . $table . " WHERE usuario = '". $usuario . "'";
 		$result = dbExecute($query);
 			if(!mysqli_num_rows($result)){
 				return true;
