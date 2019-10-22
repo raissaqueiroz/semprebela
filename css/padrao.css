@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+/* login e cadastro */
 .logo {font-size: 50px; font-family: 'Lobster', cursive; color: #DA1984; text-decoration: none}
 .logo:hover{color: #DA1984; text-decoration: none}
 .btn-text-pink {color: #DA1984; font-weight: 700;}
@@ -6,3 +7,13 @@
 .btn-login{background: #DA1984; color: #ffffff; font-weight: 700;}
 .btn-login:hover{background: #A50050; color: #ffffff;}
 .text-pink{color: #A50050}
+/* Icones do Menu */
+.horizontal-menu .bottom-navbar .page-navigation > .nav-item.active > .nav-link .menu-icon { color: #DA1984;}
+.horizontal-menu .bottom-navbar .page-navigation > .nav-item.active > .nav-link:after {border-bottom: 2px solid #DA1984;}
+.horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link .menu-title, .horizontal-menu .bottom-navbar .page-navigation > .nav-item > .nav-link .menu-icon { color: #283548}
+/* icones de sexo no cadastro */
+.form-check .form-check-label input[type="radio"] + .input-helper:before, .form-check .form-check-label input[type="radio"]:checked + .input-helper:before { border: 1px solid #DA1984 }
+.form-check .form-check-label input[type="radio"]:checked + .input-helper:before {background: #DA1984; }
+/* Focus dos Inputs */
+.form-group .label-input {font-weight: 700;}
+.form-control:focus, .typeahead:focus, .tt-query:focus, .tt-hint:focus {border-color: #DA1984; color: #283548}

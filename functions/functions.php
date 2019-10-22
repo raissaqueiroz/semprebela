@@ -17,15 +17,15 @@
 //Funções Genéricas do Sistema --- Podem ser utilizadas em outros sistemas
 
 	#função pra carregar includes
-	function carregaIncludes($pasta, $includes){
-		if(is_array($includes)){
-			if(!empty($includes)){
-				foreach ($includes as $value) {
-					include_once "$pasta/$value.php";
-				}
-			}
-		}
-	}
+	// function carregaIncludes($pasta, $includes){
+	// 	if(is_array($includes)){
+	// 		if(!empty($includes)){
+	// 			foreach ($includes as $value) {
+	// 				include_once "$pasta/$value.php";
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	#Função que monta a estrutura das flash mensagens
 	function flash($key, $mensagem, $tipo = "danger"){
@@ -73,4 +73,13 @@
 		dbClose($conn);
 	}
 
+	function dateImport($date){
+		return implode('-', array_reverse(explode('/', $date)));
+	}
+	function dateExport($date){
+		return implode('/', array_reverse(explode('-', $date)));
+	}
+	function mDebug($var){
+		return print_r($var); 
+	}
 ?>

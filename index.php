@@ -1,6 +1,10 @@
 <?php 
+    session_start();
+    session_destroy();
     require_once 'functions/functions.php';
-    carregaIncludes("functions/", array("config", "conexao", "database"));
+    require_once 'functions/config.php';
+    require_once 'functions/conexao.php';
+    require_once 'functions/database.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

@@ -126,5 +126,44 @@
 			}
 		dbClose($conn);
 	}
+	function ifExistsCliente($usuario, $table){
+		$conn = dbConnect(); //abrindo conexão
+		$query = "SELECT * FROM " . $table . " WHERE email = '". $usuario . "'";
+		$result = dbExecute($query);
+			if(!mysqli_num_rows($result)){
+				return true;
+			} else {
+				return false;
+			}
+		dbClose($conn);
+	}
+	function ifExists($campo, $value, $table){
+		$conn = dbConnect(); //abrindo conexão
+		$query = "SELECT * FROM " . $table . " WHERE ".$campo." = '". $value . "'";
+		$result = dbExecute($query);
+			if(!mysqli_num_rows($result)){
+				return true;
+			} else {
+				return false;
+			}
+		dbClose($conn);
+	}
+	function ifExistsHorario($hora, $servico){
+		$conn = dbConnect(); //abrindo conexão
+		$query = "SELECT * FROM horario WHERE  HORA = '{$hora}' AND FK_SERVICO = '{$servico}'";
+		$result = dbExecute($query);
+			if(!mysqli_num_rows($result)){
+				return true;
+			} else {
+				return false;
+			}
+		dbClose($conn);
+	}
+	function lastId(){
+		$conn = dbConnect(); 
+		$id = mysqli_insert_id($conn);
+		dbClose($conn);
+		return $id;
+	}
 
 ?>

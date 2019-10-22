@@ -8,7 +8,7 @@
 	//senha
 	define('DB_PASSWORD', "");
 	//Banco
-	define('DB_NAME', 'SEMPREBELA');
+	define('DB_NAME', 'ESPELHOMEU');
 	//codificação
 	define('DB_CHARSET', 'utf8');
 	//prefixo
@@ -19,5 +19,5 @@
 
 /* Constantes de Configuração do Site */
 	//titulo
-	define('TITLE', 'Sempre Bela');
+	define('TITLE', 'Espelho Meu');
 ?>
