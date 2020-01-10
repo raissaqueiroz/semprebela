@@ -1,4 +1,4 @@
-# Sistema Sempre Bela
+# Sempre Bela
 
 Sistema de Gestão e Agendamento Online para Salão de Beleza desenvolvido para aplicação dos conhecimentos adquiridos em PHP.
 
